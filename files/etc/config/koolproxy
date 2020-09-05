@@ -20,9 +20,3 @@ config rss_rule
 	option url 'https://raw.githubusercontent.com/firkerword/ADB/main/youtube.txt'
 	option file 'youtube.txt'
 	option time '2020-06-20 23:32'
-
-config rss_rule
-	option name 'ChinaList2.0'
-	option url 'https://raw.githubusercontent.com/hopol/ChinaList2.0/master/ChinaList2.0.txt'
-	option file 'ChinaList2.0.txt'
-	option load '0'
