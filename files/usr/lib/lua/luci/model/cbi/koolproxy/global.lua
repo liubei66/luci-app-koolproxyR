@@ -67,13 +67,13 @@ e = t:taboption("base", MultiValue, "koolproxy_rules", translate("内置规则")
 e.optional = false
 e.rmempty = false
 e:value("easylistchina.txt", translate("ABP规则"))
+e:value("mv.txt", translate("乘风视频"))
 e:value("fanboy.txt", translate("fanboy规则"))
 e:value("yhosts.txt", translate("yhosts规则"))
 e:value("AdGuardHome.txt", translate("AdG规则"))
 e:value("koolproxy.txt", translate("静态规则"))
 e:value("daily.txt", translate("每日规则"))
 e:value("kp.dat", translate("视频规则"))
-e:value("mv.txt", translate("乘风视频"))
 e:value("user.txt", translate("自定义规则"))
 
 e = t:taboption("base", ListValue, "koolproxy_port", translate("端口控制"))
