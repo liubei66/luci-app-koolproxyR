@@ -32,7 +32,7 @@ else
 	status = translate("<strong><font color=\"red\">KoolProxy plus  已停止</font></strong>")
 end
 
-o = Map("koolproxy", "<font color='green'>" .. translate("KoolProxy plus ") .."</font>",     "<font color='purple'>" .. translate( "KoolProxy plus是能识别adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告") .."</font>")
+o = Map("koolproxy", "<font color='green'>" .. translate("KoolProxy plus ") .."</font>",     "<font color='purple'>" .. translate( "该版本是能识别adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告。@斌哥改版自用、禁止商业用途") .."</font>")
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
