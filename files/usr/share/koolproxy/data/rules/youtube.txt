@@ -1,0 +1,9 @@
+[Adblock Plus 1.1]
+! Checksum: 6aCLnN/FO81nfNtOMmtpVQ
+! Title: adblock-youtube-ads
+*.googlevideo.com
+/googleads.$~script,domain=~googleads.github.io
+/pagead/lvz?
+||google.com/pagead/
+||static.doubleclick.net^$domain=youtube.com
+
