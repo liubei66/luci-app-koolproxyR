@@ -111,9 +111,9 @@ update_rss_rules() {
 	
 update_rules() {
 	echo $(date "+%F %T"): ------------------- 内置规则更新 ------------------- >>$LOGFILE
-	         wget 'http://bobohome.f3322.net:8880/files/KoolProxyRules/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
-                 wget 'http://bobohome.f3322.net:8880/files/KoolProxyRules/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
-                 wget 'http://bobohome.f3322.net:8880/files/KoolProxyRules/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt	         
+	         wget 'https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
+                 wget 'https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
+                 wget 'https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
                  wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
                  wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
 	         wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
