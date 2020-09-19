@@ -81,11 +81,11 @@ endif
 ifeq ($(ARCH),mips)
 	$(INSTALL_BIN) ./files/bin/mips $(1)/usr/share/koolproxy/koolproxy
 endif
-ifeq ($(ARCH),i386)
-	$(INSTALL_BIN) ./files/bin/i386 $(1)/usr/share/koolproxy/koolproxy
+ifeq ($(ARCH),x86)
+	$(INSTALL_BIN) ./files/bin/x86 $(1)/usr/share/koolproxy/koolproxy
 endif
 ifeq ($(ARCH),x86_64)
-	$(INSTALL_BIN) ./files/bin/x86_64 $(1)/usr/share/koolproxy/koolproxy
+	$(INSTALL_BIN) ./files/bin/x86 $(1)/usr/share/koolproxy/koolproxy
 endif
 ifeq ($(ARCH),arm)
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
