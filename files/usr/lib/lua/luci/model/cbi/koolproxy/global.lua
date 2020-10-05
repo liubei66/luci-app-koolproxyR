@@ -27,12 +27,12 @@ local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
 if luci.sys.call("pidof koolproxy >/dev/null") == 0 then
-	status = translate("<strong><font color=\"green\">广告过滤 VIP  运行中</font></strong>")
+	status = translate("<strong><font color=\"green\">Koolproxy  运行中</font></strong>")
 else
-	status = translate("<strong><font color=\"red\">广告过滤 VIP  已停止</font></strong>")
+	status = translate("<strong><font color=\"red\">Koolproxy  已停止</font></strong>")
 end
 
-o = Map("koolproxy", "<font color='green'>" .. translate("广告过滤 VIP ") .."</font>",     "<font color='purple'>" .. translate( "广告过滤 VIP是能识别adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告。@斌哥改版自用、禁止商业用途") .."</font>")
+o = Map("koolproxy", "<font color='green'>" .. translate("Koolproxy ") .."</font>",     "<font color='purple'>" .. translate( "Koolproxy是能识别adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告。@斌哥改版自用、禁止商业用途") .."</font>")
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
@@ -397,7 +397,4 @@ function(o,a,i)
 end
 )
 
-t=o:section(TypedSection,"rss_rules",translate("技术支持"))
-t.anonymous = true
-t:append(Template("koolproxy/feedback"))
 return o
